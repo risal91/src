@@ -17,8 +17,23 @@ package Day5;
 
 public class Aufgabe5 {
 
+    public static void stromKostenKalkulator(double watt, double zeit, double kWh){
+        double durchTagKosten = watt * zeit / 1000 * kWh;
+        System.out.printf("Tägliche Kosten vom PC %.2f Euro \n", durchTagKosten);
+        durchTagKosten = durchTagKosten * 365;
+
+        System.out.printf("Jährliche Kosten vom PC %.2f Euro \n", durchTagKosten);
+
+    }
+
 
     public static void main(String[] args) {
+        double laufzeit = 18;
+        double stromkosten = 0.25;
+        double verbrauch = 70;
+
+        stromKostenKalkulator(verbrauch,laufzeit,stromkosten);
+
 
     }
 }

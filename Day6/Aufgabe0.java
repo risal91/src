@@ -14,6 +14,23 @@ package Day6;
 
 public class Aufgabe0 {
     public static void main(String[] args) {
+        // Ein Arry "Album" vom Typ Sting mit der Gr 5 erstellen
+        String[] album = new String[5];
+
+        //5 Songs dem Album Hinzufügen
+        album[0] = "Song 1";
+        album[1] = "Song 2";
+        album[2] = "Song 3";
+        album[3] = "Song 4";
+        album[4] = "Song 5";
+
+        //Alle Song Printen in For
+        for (int i = 0; i < album.length; i++){
+            System.out.println("Sie hören jetzt: " + album[i]);
+        }
+
+
+
 
     }
 }
