@@ -1,4 +1,4 @@
-package Day14.aufgaben;
+package Day14.aufgaben.Aufgabe1;
 
 /* Erstellen Sie die abstrakte Klasse "Kreatur" mit einem privaten Attribut "name", einer abstrakten Methode "angreifen" und einem Konstruktor, der name initialisiert.
  * Erstellen Sie zwei weitere Klassen "Ritter" und "Drache", die beide von "Kreatur" erben.
@@ -10,4 +10,12 @@ package Day14.aufgaben;
 
 
 public class Aufgabe_1 {
+
+    public static void main(String[] args) {
+        Kreatur ritter1 = new Ritter("Lancelot");
+        Kreatur drache1 = new Drache("Fafnir");
+
+        ritter1.angreifen();
+        drache1.angreifen();
+    }
 }

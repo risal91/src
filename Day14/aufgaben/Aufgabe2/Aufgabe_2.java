@@ -1,4 +1,4 @@
-package Day14.aufgaben;
+package Day14.aufgaben.Aufgabe2;
 
 /*
     Führen Sie bitte zunächst eine abstrakte Klasse 'GeräuscheMacher' ein.
@@ -15,5 +15,20 @@ package Day14.aufgaben;
 */
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Aufgabe_2 {
+    public static void main(String[] args) {
+        List<GeräuscheMacher> geräuscheMacherList = new ArrayList<>();
+
+        geräuscheMacherList.add(new Auto());
+        geräuscheMacherList.add(new Hund());
+        geräuscheMacherList.add(new Mensch());
+
+        for (GeräuscheMacher geräuscheMacher : geräuscheMacherList){
+            geräuscheMacher.macheGeräusch();
+        }
+    }
+
 }

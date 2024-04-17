@@ -1,4 +1,4 @@
-package Day14.aufgaben;
+package Day14.aufgaben.Aufgabe0;
 
 /* Aufgabe 0 (Basics)
  * Erstellen Sie die abstrakte Klasse "Künstler" mit einer abstrakten Methode "kunstErstellen()".
