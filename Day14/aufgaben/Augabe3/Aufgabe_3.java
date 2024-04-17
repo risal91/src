@@ -18,5 +18,22 @@ package Day14.aufgaben.Augabe3;
  */
 
 
+import java.util.Arrays;
+import java.util.List;
+
+import static Day14.aufgaben.Augabe3.Ware.warenListe;
+
 public class Aufgabe_3 {
+    public static void main(String[] args) {
+    Speise Burger = new Speise("Burger",3.50, Arrays.asList("Brötchen", "Frikadelle", "Gurke", "Sauce", "Käse"));
+    Speise Schnitzel = new Speise("Schnitzel Wiener Art",11.95, Arrays.asList("Paniertes Schweine Schnitzel", "Petersilien Kartoffeln", "Spargel", "Sauce Hollandaise"));
+    Getränk Cola = new Getränk("Cola", 3.50,250);
+    Getränk Saft = new Getränk("Saft", 2.50,250);
+    Getränk Wasser = new Getränk("Wasser", 2.00,250);
+
+        System.out.println("\nUnsere Speise Karte: ");
+        for (Ware ware : warenListe) {
+            System.out.println(ware);
+        }
+    }
 }

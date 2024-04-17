@@ -6,12 +6,17 @@ public class Speise extends Ware{
     private List<String> zutaten;
 
 
-    public Speise(String bezeichung, double preis) {
+    public Speise(String bezeichung, double preis, List<String> zutaten) {
         super(bezeichung, preis);
+        this.zutaten = zutaten;
     }
 
     @Override
     public String toString() {
-        return null;
+        String ausgabe = "Speise: " +getBezeichung() +
+                "\nZutaten: " + zutaten + "\nPreis: "
+                +getPreis()+"€" +"\n\n";
+
+        return ausgabe;
     }
 }
