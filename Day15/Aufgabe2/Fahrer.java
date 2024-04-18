@@ -8,13 +8,13 @@ public class Fahrer implements TankfüllstandBeobachter{
 
     public void tanken(PKW pkw){
         try {
-            Thread.sleep(100);
+            Thread.sleep(500);
         }catch (InterruptedException e){
         }
         System.out.println("Wie viel einheiten willst du Tanken: ");
         tankLadung = Integer.parseInt(sc.nextLine());
 
-            pkw.addtankfüllstand(tankLadung); //WIR TANKEN FÜR 50 Units wir sind arm
+            pkw.addtankfüllstand(tankLadung);
 
     }
 
@@ -23,6 +23,10 @@ public class Fahrer implements TankfüllstandBeobachter{
     public void onTankfüllstandNiedrig(PKW pkw) {
         System.err.println("Tankkontrollleuchte: " + pkw.getTankfüllstandLeuchte());
 
+        try {
+            Thread.sleep(250);
+        }catch (InterruptedException e){
+        }
 
         if(pkw.getTankfüllstandLeuchte() == TankfüllstandLeuchte.GELB){
             System.out.println("Ach, hat noch Zeit...");

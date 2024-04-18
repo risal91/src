@@ -2,13 +2,13 @@ package Day15.Aufgabe2;
 
 public class PKW {
     public TankfüllstandLeuchte tankfüllstandLeuchte = TankfüllstandLeuchte.ROT;
-    private TankfüllstandBeobachter beobachter;
-    public int tankfüllstand;
+    public TankfüllstandBeobachter beobachter;
+    private int tankfüllstand;
 
     public PKW( int tankfüllstand) {
         addtankfüllstand(tankfüllstand);
-
     }
+
     public void addTankfüllstandBeobachter(TankfüllstandBeobachter beobachter){
         this.beobachter = beobachter;
     }
@@ -29,14 +29,14 @@ public class PKW {
             System.out.println("\nBrumm...");
             tankfüllstand--;
             try {
-                Thread.sleep(10);
+                Thread.sleep(500);
             }catch (InterruptedException e){
             }
             if (tankfüllstand < 10){
                 tankfüllstandLeuchte = TankfüllstandLeuchte.ROT;
                 beobachter.onTankfüllstandNiedrig(this);
                 try {
-                    Thread.sleep(100);
+                    Thread.sleep(500);
                 }catch (InterruptedException e){
                 }
 
@@ -44,7 +44,7 @@ public class PKW {
                 tankfüllstandLeuchte = TankfüllstandLeuchte.GELB;
                 beobachter.onTankfüllstandNiedrig(this);
                 try {
-                    Thread.sleep(100);
+                    Thread.sleep(500);
                 }catch (InterruptedException e){
                 }
             }
