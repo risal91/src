@@ -1,18 +1,5 @@
 package Day7;
 
-/*
-
-
-
-
-
-
-
-
-    - nach der Schleife zur Kontrolle die Auslosungen des 2-dimensionalen Arrays auf der Konsole ausgegeben werden
- */
-
-
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
