@@ -41,14 +41,13 @@
 package Day15.Aufgabe2;
 
 public class aufgabe2 {
-    public static void main(String[] args) {
-        PKW pkw1 = new PKW(TankfüllstandLeuchte.ROT,10);
+    public static void main(String[] args)  {
+        PKW pkw1 = new PKW(15);
         Fahrer fahrer1 = new Fahrer();
 
         pkw1.addTankfüllstandBeobachter(fahrer1);
         pkw1.fahren();
 
-        fahrer1.tanken(pkw1);
 
 
     }

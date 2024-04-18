@@ -1,16 +1,20 @@
 package Day15.Aufgabe2;
 
 public class PKW {
-    public TankfüllstandLeuchte tankfüllstandLeuchte;
+    public TankfüllstandLeuchte tankfüllstandLeuchte = TankfüllstandLeuchte.ROT;
     private TankfüllstandBeobachter beobachter;
     public int tankfüllstand;
 
-    public PKW(TankfüllstandLeuchte tankfüllstandLeuchte, int tankfüllstand) {
-        this.tankfüllstandLeuchte = tankfüllstandLeuchte;
-        this.tankfüllstand = tankfüllstand;
+    public PKW( int tankfüllstand) {
+        addtankfüllstand(tankfüllstand);
+
     }
     public void addTankfüllstandBeobachter(TankfüllstandBeobachter beobachter){
         this.beobachter = beobachter;
+    }
+
+    public TankfüllstandLeuchte getTankfüllstandLeuchte() {
+        return tankfüllstandLeuchte;
     }
 
     public void addtankfüllstand(int benzin){
@@ -20,23 +24,30 @@ public class PKW {
             tankfüllstandLeuchte = TankfüllstandLeuchte.GRÜN;
         }
     }
-    public void fahren(){
+    public void fahren()  {
         while (tankfüllstand > 0){
             System.out.println("\nBrumm...");
             tankfüllstand--;
+            try {
+                Thread.sleep(10);
+            }catch (InterruptedException e){
+            }
+            if (tankfüllstand < 10){
+                tankfüllstandLeuchte = TankfüllstandLeuchte.ROT;
+                beobachter.onTankfüllstandNiedrig(this);
+                try {
+                    Thread.sleep(100);
+                }catch (InterruptedException e){
+                }
 
-            if (tankfüllstand < 15){
+            }else if (tankfüllstand < 15){
                 tankfüllstandLeuchte = TankfüllstandLeuchte.GELB;
-                if(beobachter !=null){
-                    beobachter.onTankfüllstandNiedrig(this);
+                beobachter.onTankfüllstandNiedrig(this);
+                try {
+                    Thread.sleep(100);
+                }catch (InterruptedException e){
                 }
             }
         }
-            if (tankfüllstand < 10){
-                tankfüllstandLeuchte = TankfüllstandLeuchte.ROT;
-                if(beobachter !=null){
-                    beobachter.onTankfüllstandNiedrig(this);
-                }
-            }
         }
     }
