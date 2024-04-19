@@ -127,7 +127,6 @@ public class Aufgabe2 {
 
         do {
 
-
 //            + die Auslosung in einem 2-dimensionalen Array abspeichert
             for (int i = 0; i < auslosung.length; i++) {
                 fülleLottoArray(fülleLottoArray);
@@ -155,7 +154,7 @@ public class Aufgabe2 {
         }while (durchlauf < 10 && !winner);
 //        - nach der Schleife zur Kontrolle die Auslosungen des 2-dimensionalen Arrays auf der Konsole ausgegeben werden
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < auslosung.length; i++) {
             System.out.println("Die " + (i+1) + ". Ziehung war: " +Arrays.toString(auslosung[i]));
         }
         System.out.println("Dein Tipp zahlen waren: " + Arrays.toString(tipp));
