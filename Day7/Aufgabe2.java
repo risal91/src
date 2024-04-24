@@ -345,6 +345,7 @@ public class Aufgabe2 {
         do {
 
             for (int i = durchlauf; i == durchlauf; i++) {
+//            + die Auslosung in einem 2-dimensionalen Array abspeichert
                 fülleLottoArray(fülleLottoArray);
 
                 for (int k = 0; k < fülleLottoArray.length; k++) {
@@ -382,7 +383,6 @@ public class Aufgabe2 {
             }
 
             durchlauf++;
-
 
         }while (durchlauf < 140000000 && !winner);
 
