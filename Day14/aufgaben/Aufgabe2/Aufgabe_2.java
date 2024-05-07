@@ -9,7 +9,7 @@ package Day14.aufgaben.Aufgabe2;
         Konsolenausgabe von macheGeräusch in Hund:   "Wau Wau Kläff Grrrrr ..."
         Konsolenausgabe von macheGeräusch in Mensch: "Java lernen ist toll!"
 
-    Führen Sie eine Liste vom Typ GeräuscheMacher der main()-Methode hinzu.
+    Führen Sie eine Liste vom Typ GeräuscheMacher der Main()-Methode hinzu.
     Erstellen Sie von allen drei Subklassen ein Objekt und fügen diese der Liste hinzu.
     Rufen Sie bitte mittels einer foreach-Schleife, für alle Elemente der Liste, die Methode macheGeräusch auf.
 */

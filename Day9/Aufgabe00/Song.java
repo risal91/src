@@ -1,4 +1,4 @@
-package Day9.Aufgabe0;
+package Day9.Aufgabe00;
 
 public class Song {
 

@@ -8,7 +8,7 @@ package Day3;
  * wurde und das diese nicht korrekt oder verfügbar ist.
  * Schreiben Sie für jede Rechenart eine separate Methode und übergeben Sie an sie die für die Berechnung notwendigen Parameter
  * zahl1 und zahl2.
- * In der Methode soll dann die Berechnung durchgeführt und das Ergebnis an die main zurückgegeben werden.
+ * In der Methode soll dann die Berechnung durchgeführt und das Ergebnis an die Main zurückgegeben werden.
  * Die Ausgabe des Ergebnisses soll dann auf der Konsole erscheinen.
  *
  * Beachten: Geben Sie eine Fehlermeldung auf der Konsole aus, wenn durch 0 dividiert wird.

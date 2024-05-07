@@ -1,4 +1,4 @@
-package Day9;
+package Day9.AufgabeZusatz1;
 
 //Aufgabe: Erweiterung 2 des Programmes Roboter
 //
@@ -10,7 +10,7 @@ package Day9;
 //        Klasse: Roboter
 //        Passen Sie die Ausgaben, die auf der Konsole erscheinen sollen durch eine eigene Farbgestaltung an.
 //        Klasse: Programm
-//        In der main() Methode der Klasse Programm sollen Sie nun mehrere Aufgaben erstellen.
+//        In der Main() Methode der Klasse Programm sollen Sie nun mehrere Aufgaben erstellen.
 //        Anschließend erstellen Sie einen Roboter und weisen ihm Aufgaben über die Methode fuehreAufgabeAus() zu. Überprüfen Sie abschließend alle Funktionen und gewünschten Kriterien.
 //
 //          Ausgabe Beispiele:

@@ -1,4 +1,4 @@
-package Day9.Aufgabe0;
+package Day9.Aufgabe00;
 
 /* Aufgabe 0 (Basics)
  * Erstellen Sie die Klasse "Song" mit den Attributen
