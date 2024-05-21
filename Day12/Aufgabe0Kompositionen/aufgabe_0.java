@@ -1,4 +1,6 @@
-package Day12.Aufgabe0Kompositionen;/* Aufgabe 0 (Basics)
+package Day12.Aufgabe0Kompositionen;
+
+/* Aufgabe 0 (Basics)
  * Zwei Klassen:
  * "Abenteurer" mit dem Attribut String "name" und einem Konstruktor, der Name initialisiert.
  * "Gruppe" mit einer nicht-statischen Liste "abenteurerInDerGruppe"
