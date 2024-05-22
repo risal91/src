@@ -53,7 +53,11 @@ package Day12.Aufgabe6;/*
         a) Instanziierung:
             Firmen: Microsoft, Apple, Volkswagen und Porsche
             Länder: Deutschland, USA, Dänemark
-            Mitarbeiter: Mike, Marcy, Andrew, Amy, Volker, Verena, Paul und Petra
+            Mitarbeiter:
+            Mike, Marcy,
+            Andrew, Amy,
+            Volker, Verena,
+            Paul und Petra
         b) Listen auffüllen:
             Microsoft und Volkswagen sind in allen drei Ländern vertreten.
             Apple und Porsche nur in Deutschland und USA.
